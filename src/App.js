@@ -23,15 +23,17 @@ export default function App() {
         setValue("");
     }
 
-    return (<div className="container">
-        <div className="todoBlock">
-            <div className="title">
-                <h1 className="text-3xl font-bold underline">할일 목록</h1>
+    return (
+    <div>
+        <div>
+            <div>
+                <h1>할일 목록</h1>
             </div>
             <List todoData={todoData} setTodoData={setTodoData}/>
             <Form value={value} setValue={setValue} handleSubmit={handleSubmit}/>
         </div>
-    </div>);
+    </div>
+    );
 
 
 }
